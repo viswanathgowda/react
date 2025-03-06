@@ -11,10 +11,11 @@
  */
 import React from "react";
 
-export function Welcome1(props) {
+export function Welcome1({ name, designation }) {
+  // const { name, designation } = props;
   return (
     <h1>
-      Welcome {props.name} @ {props.designation}
+      Welcome {name} @ {designation}
     </h1>
   );
 }

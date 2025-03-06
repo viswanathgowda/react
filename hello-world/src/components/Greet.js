@@ -14,7 +14,8 @@ class Greet extends React.Component {
    * props are immutable
    */
   render() {
-    return <h1>Hello Class Component - {this.props.name}</h1>;
+    const { name } = this.props;
+    return <h1>Hello Class Component - {name}</h1>;
   }
 }
 

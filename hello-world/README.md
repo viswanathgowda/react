@@ -182,8 +182,23 @@ function Welcome(props) {
   return <h1>Hello, {props.name}</h1>;
 }
 ```
-
 #### Lifecycle Methods
+
+### Difference Between Props and State
+
+**Props:**
+- Props are read-only attributes used to pass data from parent to child components.
+- Props are immutable, meaning they cannot be modified by the component that receives them.
+- Props allow components to be reusable by passing different data to them.
+- Props are set by the parent component and are fixed throughout the lifetime of a component.
+
+**State:**
+- State is a local data storage that is managed within the component.
+- State is mutable, meaning it can be changed using the `setState` method in class components or the `useState` hook in functional components.
+- State is used to store data that can change over time and affect the rendering of the component.
+- State is initialized in the component itself and can be updated based on user interactions or other events.
+
+In summary, props are used to pass data from parent to child components, while state is used to manage data that changes within a component.
 
 Lifecycle methods are methods that get called at different stages of a component's lifecycle, such as `componentDidMount`, `componentDidUpdate`, and `componentWillUnmount`. For example:
 

@@ -3,6 +3,7 @@ import "./App.css";
 // import Greet from "./components/Greet";
 // import { Hello } from "./components/Hello";
 import Message from "./components/Message";
+import Count from "./components/Count";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Hello /> */}
 
       <Message />
+      <Count />
     </div>
   );
 }

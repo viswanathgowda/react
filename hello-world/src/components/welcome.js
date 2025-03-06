@@ -11,11 +11,24 @@
  */
 import React from "react";
 
-export function Welcome1() {
-  return <h1>Welcome to React</h1>;
+export function Welcome1(props) {
+  return (
+    <h1>
+      Welcome {props.name} @ {props.designation}
+    </h1>
+  );
 }
 
-export const Welcome2 = () => <h1>Welcome Functional Component</h1>;
+export const Welcome2 = (props) => {
+  return (
+    <div>
+      <h1>
+        Welcome {props.name} @ {props.designation}
+      </h1>
+      {props.children}
+    </div>
+  );
+};
 // export default Welcome = () => return <h1>Welcome to React</h1>;
 
 // export default welcome;

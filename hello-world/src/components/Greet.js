@@ -9,8 +9,12 @@
 import React from "react";
 
 class Greet extends React.Component {
+  /**We can't assign value to props like props.name = "Vishwa"
+   * props are read-only
+   * props are immutable
+   */
   render() {
-    return <h1>Hello Class Component</h1>;
+    return <h1>Hello Class Component - {this.props.name}</h1>;
   }
 }
 
